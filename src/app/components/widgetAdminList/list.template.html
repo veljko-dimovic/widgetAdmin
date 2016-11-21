@@ -1,0 +1,17 @@
+<div class="navbar-default sidebar" role="navigation">
+    <div class="sidebar-nav navbar-collapse">
+        <ul class="nav" id="side-menu">
+            <li class="sidebar-search">
+                <div class="input-group custom-search-form">
+                    <input type="text" class="form-control" placeholder="{{'search'|translate}}">
+                    <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">
+                        <i class="glyphicon glyphicon-search"></i>
+                    </button>
+                </span>
+                </div>
+            </li>
+            <list-item ng-repeat="item in $ctrl.widgetList" list-item="item" active-widget="$ctrl.activeWidget"></list-item>
+        </ul>
+    </div>
+</div>

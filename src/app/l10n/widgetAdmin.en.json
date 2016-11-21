@@ -1,0 +1,10 @@
+{
+  "map": "Map",
+  "image": "Image",
+  "text_repeater":"Text Repeater",
+  "title":"Widget Admin",
+  "search":"Search...",
+  "panelWelcomeText":"No widget selected. Please select one form the list on the left side.",
+  "install":"Install",
+  "notInstalled":"Selected widget currently is not istalled. Whould you like to install it?"
+}
