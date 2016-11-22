@@ -12,10 +12,12 @@
       <p class="text-settings">{{'notInstalled'|translate}}</p>
        <button ng-click="$ctrl.installWidget()" type="button" class="btn btn-info btn-lg" style="min-width:120px">{{'install'|translate}}</button>
     </div>
+
     <div ng-if="$ctrl.widget.installed">
-      <text-widget-component ng-if="$ctrl.widget.key=='text'"></text-widget-component>
-      <image-widget-component ng-if="$ctrl.widget.key =='image'"></image-widget-component>
-      <map-widget-component ng-if="$ctrl.widget.key =='map'"></map-widget-component>
+     <div  oc-lazy-load="$ctrl.widget.url">
+       <text-widget-component ng-if="$ctrl.widget.key =='text'"></text-widget-component>
+       <image-widget-component ng-if="$ctrl.widget.key =='image'"></image-widget-component>
+       <map-widget-component ng-if="$ctrl.widget.key =='map'"></map-widget-component>
+     </div>
     </div>
-    <!-- <ui-view></ui-view> -->
 </div>

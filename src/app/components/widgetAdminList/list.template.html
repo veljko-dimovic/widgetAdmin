@@ -3,7 +3,7 @@
         <ul class="nav" id="side-menu">
             <li class="sidebar-search">
                 <div class="input-group custom-search-form">
-                    <input type="text" class="form-control" placeholder="{{'search'|translate}}">
+                    <input type="text" ng-model="$ctrl.widgetName" class="form-control" placeholder="{{'search'|translate}}">
                     <span class="input-group-btn">
                     <button class="btn btn-default" type="button">
                         <i class="glyphicon glyphicon-search"></i>
@@ -11,7 +11,7 @@
                 </span>
                 </div>
             </li>
-            <list-item ng-repeat="item in $ctrl.widgetList" list-item="item" active-widget="$ctrl.activeWidget"></list-item>
+            <list-item ng-repeat="item in $ctrl.widgetList | filter:$ctrl.widgetName" list-item="item" active-widget="$ctrl.activeWidget"></list-item>
         </ul>
     </div>
 </div>

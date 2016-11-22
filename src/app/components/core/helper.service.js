@@ -11,7 +11,7 @@ export default class HelperService {
       'key':"text",
       'name':"text_repeater",
       'icon':"glyphicon-font",
-      'url':"./widgets/text-widget/dist/text-widget.module.js",
+      'url':"./widgets/text-widget/text-widget.directive.js",
       'installed':false
     };
 
@@ -19,7 +19,7 @@ export default class HelperService {
       'key':"map",
       'name':"map",
       'icon':"glyphicon-map-marker",
-      'url':"./widgets/map-widget/angular-google-maps.min.js",
+      'url':"./widgets/map-widget/map-widget.directive.js",
       'installed':false
     };
 
@@ -27,7 +27,7 @@ export default class HelperService {
       'key':"image",
       'name':"image",
       'icon':"glyphicon-picture",
-      'url':"./widgets/image-widget/image-widget.module.js",
+      'url':"./widgets/image-widget/image-widget.directive.js",
       'installed':false
     };
 
